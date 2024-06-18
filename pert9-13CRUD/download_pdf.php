@@ -15,7 +15,7 @@ $pdf->SetFont('dejavusans', '', 14, '', true);
 $pdf->AddPage();
 
 // Tahap 2: Ambil konten HTML dari file yang ingin di konversi ke PDF
-$html = file_get_contents("http://localhost/pert9-13CRRUD/tampilan_pdf.php");
+$html = file_get_contents("http://localhost/pert9-13CRUD/tampilan_pdf.php");
 
 // Tahap 4: Tulis konten HTML yang dimodifikasi ke dokumen PDF
 $pdf->writeHTMLCell(0, 0, '', '', $html, 0, 1, 0, true, '', true);
